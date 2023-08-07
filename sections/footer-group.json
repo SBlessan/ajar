@@ -4,6 +4,9 @@
   "sections": {
     "a45a003a-0bad-43f6-9973-1d9ac4f6ff80": {
       "type": "custom-liquid",
+      "custom_css": [
+        "div{margin:10px; }"
+      ],
       "settings": {
         "custom_liquid": "<div id=\"insta-feed\"><\/div>",
         "color_scheme": "",
