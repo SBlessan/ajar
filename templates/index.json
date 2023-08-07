@@ -86,9 +86,9 @@
       "settings": {
         "image-left": "shopify:\/\/shop_images\/5.webp",
         "image-right": "shopify:\/\/shop_images\/6.webp",
-        "hover-text-1": "",
-        "hover-text-2": "",
-        "hover-text-img2": "",
+        "hover-text-1": "Discover",
+        "hover-text-2": "Halwa Kiss Parfum",
+        "hover-text-img2": "The Honey Collection",
         "link1": "",
         "link2": ""
       }
