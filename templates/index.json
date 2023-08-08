@@ -92,6 +92,15 @@
         "link1": "",
         "link2": ""
       }
+    },
+    "2ac315f8-2123-4d5f-907d-2d2b575d0d0a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"insta-feed\"><\/div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -99,6 +108,7 @@
     "e1135bf6-40e0-496e-aff1-7c9a5977f368",
     "b68dc7d5-7b21-4ff9-964f-6f2f3790fccc",
     "dc602b37-bb6c-4d23-b2a2-38ae17a5fbdc",
-    "6acc3809-ff84-4d4d-b5c1-c980de736b79"
+    "6acc3809-ff84-4d4d-b5c1-c980de736b79",
+    "2ac315f8-2123-4d5f-907d-2d2b575d0d0a"
   ]
 }
