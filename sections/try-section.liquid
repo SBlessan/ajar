@@ -12,8 +12,11 @@
      
     {% endfor %}
   </div>
+
+  <button onclick="show()">Show/Hide</button>
   
 </div>
+
 
 
 
@@ -55,7 +58,8 @@
 {% endschema %}
 <script>
 function hi(){ console.log('Hi!')
-              let text = {{section.settings.heading}}
+              let text = document.getElementById("block_container")
+              
               
                 console.log(text)
              }
