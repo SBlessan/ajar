@@ -55,17 +55,10 @@
           "settings": {
             "blocktext": "Enter Item Description"
           }
-        },
-        "3639a18c-1e9c-40e9-8978-662e0bf3acde": {
-          "type": "image",
-          "settings": {
-            "blocktext": "Enter Item Description"
-          }
         }
       },
       "block_order": [
-        "16659c09-e538-416e-8654-7949f0144d57",
-        "3639a18c-1e9c-40e9-8978-662e0bf3acde"
+        "16659c09-e538-416e-8654-7949f0144d57"
       ],
       "settings": {
         "heading": "Try heading"

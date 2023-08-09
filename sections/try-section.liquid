@@ -7,7 +7,7 @@
       <div class="block_content">
          <img src="{{ block.settings.block_image | img_url:'large'}}" />
          <h2>Hiiii {{ block.settings.blocktext }}</h2>
-        <button onclick="function hi(){ console.log('Hi!')};hi()">Add to cart</button>
+        <button onclick="hi()">Add to cart</button>
       </div>
      
     {% endfor %}
@@ -16,9 +16,7 @@
 </div>
 
 <script>
-  function myFunction() {
-    console.log("Working")
-  }
+function hi(){ console.log('Hi!')}
 </script>
 
 {% schema %}
