@@ -1,1 +1,48 @@
-{"sections":{"cart-items":{"type":"main-cart-items","settings":{"padding_top":36,"padding_bottom":36}},"cart-footer":{"type":"main-cart-footer","blocks":{"subtotal":{"type":"subtotal","settings":{}},"buttons":{"type":"buttons","settings":{}}},"block_order":["subtotal","buttons"],"settings":{"padding_top":20,"padding_bottom":40}}},"order":["cart-items","cart-footer"]}
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "463e9911-3266-40b8-8be0-6ee636f84e7f": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% for item in cart.items %}\n  \n  {{ item.name }}\n{% endfor %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "463e9911-3266-40b8-8be0-6ee636f84e7f"
+  ]
+}
