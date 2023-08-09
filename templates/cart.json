@@ -33,7 +33,7 @@
     "463e9911-3266-40b8-8be0-6ee636f84e7f": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h1>Product<\/h1>\n{% for item in cart.items %}\n  \n  {{ item.name }}\n{% endfor %}",
+        "custom_liquid": "{% for item in cart.items %}\n\n{% if item %}\n    <div><h1>Some text here!<\/h1><\/div><br> \n\n{% endif %}\n\n{% endfor %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
