@@ -54,7 +54,8 @@
         "16659c09-e538-416e-8654-7949f0144d57": {
           "type": "image",
           "settings": {
-            "blocktext": "Enter Item Description"
+            "block_image": "shopify:\/\/shop_images\/SAMPLE_EAGLE_EYED-400_1200_small_c6c119c5-3250-4ef0-b68e-bbfd42df63f2.png",
+            "blocktext": ""
           }
         }
       },
