@@ -1,12 +1,4 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+{% for item in cart.items %}
+  
+  {{ item.name }}
+{% endfor %}
