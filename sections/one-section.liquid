@@ -15,7 +15,7 @@
     {% for collec in collections[section.settings.collection_to_display.handle].products %}
       <div class="collection-item">
         <a href="{{ collec.url }}">
-          <p id="myP" data-title={{  collec.title }} data-id={{ collec.variants[0].id }}>{{ collec.title }}</p>
+          <p class="myP" data-title={{  collec.title }} data-id={{ collec.variants[0].id }}>{{ collec.title }}</p>
           <img src="{{ collec.image | img_url: 'large' }}" alt="{{ collec.title }}">
           <h3>{{ collec.title }}</h3>
           <p class="demo">{{ collec.variants[0].id }}</p>
@@ -37,7 +37,7 @@
 
   $('#add_button').click(function() {
         
-        const element = $("#myP").attr("data-id"); 
+        const element = $(".myP").attr("data-id"); 
         // let id = element.getAttribute("data-id"); 
     console.log("attrrrr" , element)
         CartJS.addItem(element);
