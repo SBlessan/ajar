@@ -1,7 +1,24 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "One-section",
+    "settings": [
+      {
+        "type":"text",
+        "id":"heading",
+        "label":"Main Heading",
+        "default":"Main heading"
+      },
+      {
+        "type":"image_picker",
+        "id":"image",
+        "label":"Add Image"
+      }
+    ],
+    
+    "presets":[{
+      "category":"One Section",
+      "name":"One section"
+    }]
   }
 {% endschema %}
 
