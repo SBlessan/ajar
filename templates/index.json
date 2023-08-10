@@ -122,7 +122,7 @@
       "type": "one-section",
       "settings": {
         "title": "Featured Collections",
-        "collection_to_display": "15ml"
+        "collection_to_display": "2ml"
       }
     }
   },
