@@ -18,7 +18,7 @@
           <p id="myH1" data-title={{  collec.title }} data-id={{ collec.variants[0].id }}>{{ collec.title }}</p>
           <img src="{{ collec.image | img_url: 'large' }}" alt="{{ collec.title }}">
           <h3>{{ collec.title }}</h3>
-          <p class="demo"></p>
+          <p class="demo">{{ collec.variants[0].id }}</p>
         </a>
         <button id="add_button">Add to Cart</button>
       </div>
