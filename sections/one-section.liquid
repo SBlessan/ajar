@@ -18,7 +18,7 @@
           <p id="myH1" data-title={{  collec.title }} data-id={{ collec.id }}>{{ collec.title }}</p>
           <img src="{{ collec.image | img_url: 'large' }}" alt="{{ collec.title }}">
           <h3>{{ collec.title }}</h3>
-          <p id="demo"></p>
+          <p class="demo"></p>
         </a>
         <button>Add to Cart</button>
       </div>
@@ -29,7 +29,7 @@
 <script>
   const element = document.getElementById("myH1"); 
   let text = element.getAttribute("data-id"); 
-  document.getElementById("demo").innerHTML = text;
+  document.getElementByClass("demo").innerHTML = text;
   console.log("From script", text)
 </script>
 
