@@ -10,9 +10,10 @@
   <h2 class="section-title">{{ section.settings.title }}</h2>
   
   <div class="collection-grid">
-    if ({{ section.settings.collection_to_display.handle }}){
+    {% if  section.settings.collection_to_display.handle  %}
+    
     <p>Type somehing</p>
-    }
+    {% endif  %}}
     {% for collec in collections[section.settings.collection_to_display] %}
       <div class="collection-item">
         <a href="{{ collec.url }}">
