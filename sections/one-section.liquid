@@ -27,8 +27,9 @@
 </section>
 
 <script>
- document.ready(
-    jQuery(function() {
+
+$( document ).ready(function() {
+  jQuery(function() {
         CartJS.init({{ cart | json }});
     });
   
@@ -43,7 +44,9 @@
     console.log("attrrrr" , element)
         CartJS.addItem(element);
     });
- )
+   
+});
+
  
 
   
