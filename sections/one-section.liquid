@@ -15,15 +15,22 @@
     {% for collec in collections[section.settings.collection_to_display.handle].products %}
       <div class="collection-item">
         <a href="{{ collec.url }}">
-          <p data-id={{ collect.variant.id }}>{{ collec.title }}</p>
+          <p id="myH1" data-id={{ collect.variant.id }}>{{ collec.title }}</p>
           <img src="{{ collec.image | img_url: 'large' }}" alt="{{ collec.title }}">
           <h3>{{ collec.title }}</h3>
+          <p id="demo"></p>
         </a>
         <button>Add to Cart</button>
       </div>
     {% endfor %}
   </div>
 </section>
+
+<script>
+  const element = document.getElementById("myH1"); 
+  let text = element.getAttribute("data-id"); 
+  document.getElementById("demo").innerHTML = text;
+</script>
 
 
 {% schema %}
