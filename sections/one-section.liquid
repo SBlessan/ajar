@@ -1,26 +1,14 @@
 
-
-
-{% comment %}
-  collections-template.liquid
-  This is an example of a collection section template.
-{% endcomment %}
-
 <section class="collection-section">
   <h2 class="section-title">{{ section.settings.title }}</h2>
   
   <div class="collection-grid">
-    {% if  section.settings.collection_to_display  %}
-    
-    <p>Type somehing {{ section.settings.collection_to_display.handle }}</p>
-    {% endif  %}
-    
-    {% for collec in collections[section.settings.collection_to_display.handle].products %}
+    {% for collection in collections[section.settings.collection_to_display] %}
       <div class="collection-item">
-        <a href="{{ collec.url }}">
-          <p>{{ collec.title }}</p>
-          <img src="{{ collec.image | img_url: 'medium' }}" alt="{{ collec.title }}">
-          <h3>{{ collec.title }}</h3>
+        <a href="{{ collection.url }}">
+          <p>{{ collection.title }}</p>
+          <img src="{{ collection.image | img_url: 'medium' }}" alt="{{ collection.title }}">
+          <h3>{{ collection.title }}</h3>
         </a>
       </div>
     {% endfor %}
