@@ -11,7 +11,7 @@
   
   <div class="collection-grid">
     <script>
-      console.log('sffs',{{ section.settings.collection_to_display }})
+      console.log('sffs',{{ section.settings.collection_to_display.handle }})
     </script>
     {% for collection in collections[section.settings.collection_to_display] %}
       <div class="collection-item">
