@@ -15,7 +15,7 @@
     {% for collec in collections[section.settings.collection_to_display.handle].products %}
       <div class="collection-item">
         <a href="{{ collec.url }}">
-          <p id="myH1" data-title={{  collec.title }} data-id={{ collec.variants[0].id }}>{{ collec.title }}</p>
+          <p id="myP" data-title={{  collec.title }} data-id={{ collec.variants[0].id }}>{{ collec.title }}</p>
           <img src="{{ collec.image | img_url: 'large' }}" alt="{{ collec.title }}">
           <h3>{{ collec.title }}</h3>
           <p class="demo">{{ collec.variants[0].id }}</p>
@@ -31,7 +31,7 @@
         CartJS.init({{ cart | json }});
     });
   
-  const element = document.getElementById("myH1"); 
+  const element = document.getElementById("myP"); 
   let text = element.getAttribute("data-id"); 
   document.querySelector(".demo").innerHTML = text;
   console.log("From script", text)
