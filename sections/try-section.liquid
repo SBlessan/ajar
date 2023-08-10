@@ -70,6 +70,14 @@
   }
 {% endschema %}
 <script>
+ 
+    jQuery(function() {
+        CartJS.init({{ cart | json }}, {
+            "dataAPI": false,
+            "requestBodyClass": "loading"
+        });
+    });
+
 function hi(){ console.log('Hi!')
               let text = document.getElementById("block_container")
               
