@@ -6,7 +6,7 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <h2>{{ collection.title }}</h2>
-      {{ block.settings.page.content }}
+     
       <img src="{{ collection.image | img_url: 'master' }}" alt="Image">
     </div>
     <button class="popup" data-id ={{ collection.variants[0].id }} data-name={{ collection.title  }} data-price={{ collection.price }}>Popup</button>
@@ -14,7 +14,8 @@
 {% endfor %}
 
   <div class="popup-container">
-    
+    <h1>{{ collection.title }}</h1>
+    <p>{{ collection.price }}</p>
   </div>
 
 </div>
