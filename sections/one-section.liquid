@@ -20,7 +20,7 @@
           <h3>{{ collec.title }}</h3>
           <p class="demo">{{ collec.variants[0].id }}</p>
         </a>
-        <button id="add_button">Add to Cart</button>
+        <button class="add_button">Add to Cart</button>
       </div>
     {% endfor %}
   </div>
@@ -36,7 +36,7 @@ $( document ).ready(function() {
   
 
 
-  $('#add_button').click(function() {
+  $('.add_button').click(function() {
         
         const element = $(".myP").attr("data-id"); 
         // let id = element.getAttribute("data-id"); 
