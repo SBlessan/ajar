@@ -106,7 +106,7 @@
       "type": "popup",
       "settings": {
         "title": "Enter The Title",
-        "collection_to_display": "2ml"
+        "collection_to_display": "15ml"
       }
     }
   },
