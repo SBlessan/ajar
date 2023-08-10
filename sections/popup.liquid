@@ -9,7 +9,7 @@
      
       <img src="{{ collection.image | img_url: 'small' }}" alt="Image">
     </div>
-    <button class="popup" data-id ={{ collection.variants[0].id }} data-name={{ collection.title  }} data-price={{ collection.price }}>Popup</button>
+    <button class="popup-open" data-id ={{ collection.variants[0].id }} data-name={{ collection.title  }} data-price={{ collection.price }}>Popup</button>
      <button class="popup-close">Close</button>
   </div>
 {% endfor %}
@@ -22,11 +22,19 @@
 </div>
 
 <script>
-  $(".popup").click(function() {
+  $(".popup-open").click(function() {
         
         const element = $(this).attr("data-id"); 
        
         $(".popup-container").css("display", "block");
+        console.log("attrrrr" , element)
+   
+    });
+
+  $(".popup-close").click(function() {
+        
+       
+        $(".popup-container").css("display", "none");
         console.log("attrrrr" , element)
    
     });
