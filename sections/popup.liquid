@@ -1,8 +1,23 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+   {
+  "name": "Collection Section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "title",
+      "default": "Enter The Title"
+    },
+    {
+      "type": "collection",
+      "label": "Collection to Display",
+      "id": "collection_to_display"
+    }
+  ], "presets":[{
+      "category":"One section",
+      "name":"One section"
+    }]
+}
 {% endschema %}
 
 {% stylesheet %}
