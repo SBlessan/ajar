@@ -15,8 +15,8 @@
     {% for collec in collections[section.settings.collection_to_display.handle].products %}
       <div class="collection-item">
         <a href="{{ collec.url }}">
-          <p>{{ collec.title }}</p>
-          <img src="{{ collec.image | img_url: 'small' }}" alt="{{ collec.title }}">
+          <p data-id={{ collect.variant.id }}>{{ collec.title }}</p>
+          <img src="{{ collec.image | img_url: 'large' }}" alt="{{ collec.title }}">
           <h3>{{ collec.title }}</h3>
         </a>
         <button>Add to Cart</button>
