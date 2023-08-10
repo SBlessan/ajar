@@ -13,12 +13,12 @@
     <script>
       console.log('sffs',{{ section.settings.collection_to_display.handle }})
     </script>
-    {% for collection in collections[section.settings.collection_to_display] %}
+    {% for collec in collections[section.settings.collection_to_display] %}
       <div class="collection-item">
-        <a href="{{ collection.url }}">
-          <p>{{ collection.title }}</p>
-          <img src="{{ collection.image | img_url: 'medium' }}" alt="{{ collection.title }}">
-          <h3>{{ collection.title }}</h3>
+        <a href="{{ collec.url }}">
+          <p>{{ collec.title }}</p>
+          <img src="{{ collec.image | img_url: 'medium' }}" alt="{{ collec.title }}">
+          <h3>{{ collec.title }}</h3>
         </a>
       </div>
     {% endfor %}
