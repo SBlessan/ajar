@@ -20,3 +20,25 @@
     {% endfor %}
   </div>
 </section>
+
+
+{% schema %}
+
+  {
+  "name": "Collection Section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "title",
+      "default": "Featured Collections"
+    },
+    {
+      "type": "collection",
+      "label": "Collection to Display",
+      "id": "collection_to_display"
+    }
+  ]
+}
+
+{% endschema %}
