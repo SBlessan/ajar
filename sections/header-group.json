@@ -49,6 +49,7 @@
     },
     "f73aaf6f-64ed-43f1-92a6-5b2d207c70e0": {
       "type": "try-section",
+      "disabled": true,
       "blocks": {
         "16659c09-e538-416e-8654-7949f0144d57": {
           "type": "image",
