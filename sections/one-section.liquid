@@ -13,7 +13,8 @@
     {% for collection in collections[section.settings.collection_to_display] %}
       <div class="collection-item">
         <a href="{{ collection.url }}">
-          <img src="{{ collection.featured_image | img_url: 'medium' }}" alt="{{ collection.title }}">
+          <p>{{ collection.title }}</p>
+          <img src="{{ collection.image | img_url: 'medium' }}" alt="{{ collection.title }}">
           <h3>{{ collection.title }}</h3>
         </a>
       </div>
