@@ -24,7 +24,8 @@
 </div>
 
 <script>
-  $(".popup-open").click(function() {
+  $( document ).ready(function() {
+    $(".popup-open").click(function() {
         
         const element = $(this).attr("data-id"); 
        
@@ -39,6 +40,8 @@
   console.log("attrrrr" , element)
    
     });
+  }
+  
    
 </script>
 
