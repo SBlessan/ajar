@@ -10,6 +10,9 @@
   <h2 class="section-title">{{ section.settings.title }}</h2>
   
   <div class="collection-grid">
+    <script>
+      console.log('sffs',{{ section.settings.collection_to_display }})
+    </script>
     {% for collection in collections[section.settings.collection_to_display] %}
       <div class="collection-item">
         <a href="{{ collection.url }}">
