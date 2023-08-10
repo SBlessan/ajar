@@ -31,12 +31,13 @@
         CartJS.init({{ cart | json }});
     });
   
-  const element = document.getElementById("myP"); 
-  let text = element.getAttribute("data-id"); 
+  
   document.querySelector(".demo").innerHTML = text;
   console.log("From script", text)
 
   $('#add_button').click(function() {
+        const element = document.getElementById("myP"); 
+        let text = element.getAttribute("data-id"); 
         CartJS.addItem(text);
     });
 
