@@ -114,8 +114,15 @@
     "62c262ff-18a2-49bf-8d99-99fa2fdc6b77": {
       "type": "one-section",
       "settings": {
-        "heading": "One section heading",
-        "image": "shopify:\/\/shop_images\/EDP_PACK_OPEN_ROUTES_NOMADES_210521.jpg"
+        "title": "Featured Collections",
+        "collection_to_display": ""
+      }
+    },
+    "dad92262-6195-4bd5-8bb4-96dba49cbe44": {
+      "type": "one-section",
+      "settings": {
+        "title": "Featured Collections",
+        "collection_to_display": "15ml"
       }
     }
   },
@@ -127,6 +134,7 @@
     "6acc3809-ff84-4d4d-b5c1-c980de736b79",
     "2ac315f8-2123-4d5f-907d-2d2b575d0d0a",
     "649f01ec-92c3-49d9-90fe-0f68b6298d49",
-    "62c262ff-18a2-49bf-8d99-99fa2fdc6b77"
+    "62c262ff-18a2-49bf-8d99-99fa2fdc6b77",
+    "dad92262-6195-4bd5-8bb4-96dba49cbe44"
   ]
 }
