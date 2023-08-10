@@ -10,7 +10,7 @@
          <img src="{{ block.settings.block_image | img_url:'large'}}" />
          <h2> {{ block.settings.blocktext }}</h2>
        
-          <button onclick="hi()">Add to cart</button>
+          <button class="check_button" >Add to cart</button>
         
         
       </div>
@@ -21,7 +21,7 @@
   
   
 </div>
-<button class="check_button" onclick="showw()">Show/Hide</button>
+<button  onclick="showw()">Show/Hide</button>
 
 {% endif %}
 
@@ -79,7 +79,7 @@
     });
 
   $('.check_button').click(function() {
-        CartJS.addItem(12345678);
+        CartJS.addItem();
     });
 
 
