@@ -1,3 +1,4 @@
+{% if cart.items %}
 <div class="outer_container">
   <h1>{{ section.settings.heading }}</h1>
 
@@ -17,6 +18,8 @@
   
 </div>
 <button onclick="showw()">Show/Hide</button>
+
+{% endif %}
 
 <style>
   block_content img{
