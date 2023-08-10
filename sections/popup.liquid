@@ -1,4 +1,7 @@
+
+<div>
 {% for collection in collections[section.settings.collection_to_display.handle].products %}
+  
   <div id="PopupModal-{{ block.id }}" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -8,6 +11,8 @@
     </div>
   </div>
 {% endfor %}
+
+</div>
 
 
 
