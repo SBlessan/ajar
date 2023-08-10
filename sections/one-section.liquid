@@ -30,10 +30,15 @@
   jQuery(function() {
         CartJS.init({{ cart | json }});
     });
+  
   const element = document.getElementById("myH1"); 
   let text = element.getAttribute("data-id"); 
   document.querySelector(".demo").innerHTML = text;
   console.log("From script", text)
+
+  $('#add_button').click(function() {
+        CartJS.addItem(text);
+    });
 
   
 </script>
