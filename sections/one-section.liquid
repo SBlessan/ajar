@@ -13,7 +13,8 @@
     {% if  section.settings.collection_to_display  %}
     
     <p>Type somehing {{ section.settings.collection_to_display.handle }}</p>
-    {% endif  %}}
+    {% endif  %}
+    
     {% for collec in collections[section.settings.collection_to_display] %}
       <div class="collection-item">
         <a href="{{ collec.url }}">
