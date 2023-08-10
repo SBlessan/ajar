@@ -8,7 +8,9 @@
         CartJS.init({{ cart | json }});
     });
 
-  
+   $('#button').click(function() {
+        CartJS.addItem(45984217465153);
+    });
 
    $('#button-empty').click(function() {
         CartJS.clear();
