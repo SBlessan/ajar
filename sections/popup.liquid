@@ -1,5 +1,5 @@
 
-<div class="main-outer-container">
+<div >
 {% for collection in collections[section.settings.collection_to_display.handle].products %}
   
   <div id="PopupModal-{{ block.id }}" class="modal">
@@ -66,9 +66,10 @@
 {% endschema %}
 
 <style>
+  / Add your existing styles for the modal here /
+  / ... /
 
-
-  
+  / Additional styles for the modal popup /
   .modal {
     display: none;
     position: fixed;
