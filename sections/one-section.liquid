@@ -1,31 +1,22 @@
-<h1  data-image="{{ section.settings.heading }}">{{ section.settings.heading  }}</h1>
-<img src = "{{ section.settings.image | image_url:'large'  }}"
 
 
-{% schema %}
-  {
-    "name": "One-section",
-    "settings": [
-      {
-        "type":"text",
-        "id":"heading",
-        "label":"Main Heading",
-        "default":"Main heading"
-      },
-      {
-        "type":"image_picker",
-        "id":"image",
-        "label":"Add Image"
-      }
-    ],
-    
-    "presets":[{
-      "category":"One Section",
-      "name":"One section"
-    }]
-  }
-{% endschema %}
 
-<script>
+{% comment %}
+  collections-template.liquid
+  This is an example of a collection section template.
+{% endcomment %}
+
+<section class="collection-section">
+  <h2 class="section-title">{{ section.settings.title }}</h2>
   
-</script>
+  <div class="collection-grid">
+    {% for collection in collections[section.settings.collection_to_display] %}
+      <div class="collection-item">
+        <a href="{{ collection.url }}">
+          <img src="{{ collection.featured_image | img_url: 'medium' }}" alt="{{ collection.title }}">
+          <h3>{{ collection.title }}</h3>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
