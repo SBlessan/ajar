@@ -177,9 +177,19 @@
                     show_quick_add: section.settings.enable_quick_add,
                     section_id: section.id
                   %}
+                  <button id="show_button" >Cart add button</button>
                 </li>
+                
               {%- endfor -%}
             </ul>
+
+            <style>
+            #show_button {
+              
+              
+              margin:0;
+            }
+            </style>
 
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}

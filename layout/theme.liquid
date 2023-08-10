@@ -334,5 +334,14 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/shopify-cartjs/1.1.0/cart.min.js"></script>
+     {{ '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' | script_tag }}
+
+      <!-- Include Cart.js -->
+      {{ 'cart.min.js' | asset_url | script_tag }}
+
+      <!-- Initialise Cart.js once the page has loaded -->
+      
   </body>
 </html>
