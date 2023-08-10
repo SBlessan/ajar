@@ -62,13 +62,21 @@
           "type": "image",
           "settings": {
             "block_image": "shopify:\/\/shop_images\/SAMPLE_EAGLE_EYED-400_1200_small_c6c119c5-3250-4ef0-b68e-bbfd42df63f2.png",
-            "blocktext": "Enter Item Description"
+            "blocktext": ""
+          }
+        },
+        "8de31b97-ab60-4387-bfcc-6135f5d6b72d": {
+          "type": "image",
+          "settings": {
+            "block_image": "shopify:\/\/shop_images\/SAMPLE_EAGLE_EYED-400_1200_small_c6c119c5-3250-4ef0-b68e-bbfd42df63f2.png",
+            "blocktext": ""
           }
         }
       },
       "block_order": [
         "16659c09-e538-416e-8654-7949f0144d57",
-        "66218a05-2137-4515-b8d0-52f2aa107881"
+        "66218a05-2137-4515-b8d0-52f2aa107881",
+        "8de31b97-ab60-4387-bfcc-6135f5d6b72d"
       ],
       "settings": {
         "heading": "Try heading"
