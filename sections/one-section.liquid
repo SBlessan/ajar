@@ -15,7 +15,7 @@
     {% for collec in collections[section.settings.collection_to_display.handle].products %}
       <div class="collection-item">
         <a href="{{ collec.url }}">
-          <p id="myH1" data-title={{  collec.title }} data-id={{ collec.id }}>{{ collec.title }}</p>
+          <p id="myH1" data-title={{  collec.title }} data-id={{ collec.variants[0].id }}>{{ collec.title }}</p>
           <img src="{{ collec.image | img_url: 'large' }}" alt="{{ collec.title }}">
           <h3>{{ collec.title }}</h3>
           <p class="demo"></p>
