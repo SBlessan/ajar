@@ -101,13 +101,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "a5ad48f0-5f14-41cd-bf22-99e74c17c893": {
-      "type": "popup",
-      "settings": {
-        "title": "Enter The Title",
-        "collection_to_display": "parfum-100ml"
-      }
     }
   },
   "order": [
@@ -116,7 +109,6 @@
     "b68dc7d5-7b21-4ff9-964f-6f2f3790fccc",
     "dc602b37-bb6c-4d23-b2a2-38ae17a5fbdc",
     "6acc3809-ff84-4d4d-b5c1-c980de736b79",
-    "2ac315f8-2123-4d5f-907d-2d2b575d0d0a",
-    "a5ad48f0-5f14-41cd-bf22-99e74c17c893"
+    "2ac315f8-2123-4d5f-907d-2d2b575d0d0a"
   ]
 }
