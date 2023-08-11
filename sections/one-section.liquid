@@ -16,7 +16,7 @@
       <div class="collection-item">
         <a href="{{ collec.url }}">
           <p class="myP" data-title={{  collec.title }} data-id={{ collec.variants[0].id }}>{{ collec.title }}</p>
-          <img src="{{ collec.image | img_url: 'large' }}" alt="{{ collec.title }}">
+          <img src="{{ collec.featured_image | img_url: 'large' }}" alt="{{ collec.title }}">
           <h3>{{ collec.title }}</h3>
           <p class="demo">{{ collec.variants[0].id }}</p>
         </a>
