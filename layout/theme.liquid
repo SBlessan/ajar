@@ -345,11 +345,7 @@
         {{ 'cart.min.js' | asset_url | script_tag }}
 
       <!-- Initialise Cart.js once the page has loaded -->
-        <script type="text/javascript">
-            jQuery(function() {
-                CartJS.init({{ cart | json }});
-            });
-        </script>
+        
 
   </body>
 </html>

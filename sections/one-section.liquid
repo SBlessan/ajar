@@ -1,85 +1,99 @@
+{% if cart.item_count > 0 %}
+
+  <section class="collection-section">
+    <h2 class="section-title">{{ section.settings.title }}</h2>
 
 
+    <div class="collection-grid">
 
-{% comment %}
-  collections-template.liquid
-  This is an example of a collection section template.
-{% endcomment %}
 
-<section class="collection-section">
-  <h2 class="section-title">{{ section.settings.title }}</h2>
-  
-  <div class="collection-grid">
-   
-    
-    {% for collec in collections[section.settings.collection_to_display.handle].products %}
-      <div class="collection-item">
-        <a href="{{ collec.url }}">
-          <p class="myP" data-title={{  collec.title }} data-id={{ collec.variants[0].id }}>{{ collec.title }}</p>
-          <img src="{{ collec.image | img_url: 'large' }}" alt="{{ collec.title }}">
-          <h3>{{ collec.title }}</h3>
-          <p class="demo">{{ collec.variants[0].id }}</p>
-        </a>
-        <button data-id={{ collec.variants[0].id }} class="add_button">Add to Cart</button>
-      </div>
-    {% endfor %}
-  </div>
-</section>
+      {% for collec in collections[section.settings.collection_to_display.handle].products %}
+        <div class="collection-item">
+          <a href="{{ collec.url }}">
+
+            <img src="{{ collec.featured_image | img_url: 'large' }}" alt="{{ collec.title }}">
+            <h3 class="collection-detail">{{ collec.title }}</h3>
+            <p class="demo collection-detail">{{ collec.type }}</p>
+          </a>
+          <button data-id={{ collec.variants[0].id }} class="add_button">Add to Cart</button>
+        </div>
+        {% for item in cart.items %}
+          <p class="try-data" data-cart="{{item.title}}"></p>
+        {% endfor %}
+      {% endfor %}
+    </div>
+
+  </section>
+
+{% endif %}
 
 <script>
 
-$( document ).ready(function() {
-  jQuery(function() {
-        CartJS.init({{ cart | json }});
+  $(document).ready(function() {
+    jQuery(function() {
+      CartJS.init({{ cart | json }});
     });
-  
-  
 
 
-  $('.add_button').click(function() {
-        
-        const element = $(this).attr("data-id"); 
-       
-        // let id = element.getAttribute("data-id"); 
-        console.log("attrrrr" , element)
-        CartJS.addItem(element);
+
+    $('.add_button').click(function() {
+
+      const element = $(this).attr("data-id");
+      const data = $(".try-data").attr("data-cart")
+      console.log("Data is : ", data)
+
+
+      CartJS.addItem(element);
+
+
+      console.log(CartJS.cart.item_count)
     });
-   
-});
 
- 
-
-  
+  });
 </script>
-
 
 {% schema %}
 
   {
-  "name": "Collection Section",
-  "settings": [
-    {
-      "type": "text",
-      "label": "Section Title",
-      "id": "title",
-      "default": "Featured Collections"
-    },
-    {
-      "type": "collection",
-      "label": "Collection to Display",
-      "id": "collection_to_display"
-    }
-  ], "presets":[{
-      "category":"One section",
-      "name":"One section"
-    }]
-}
-
+    "name": "Collection Section",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Section Title",
+        "id": "title",
+        "default": "Featured Collections"
+      }, {
+        "type": "collection",
+        "label": "Collection to Display",
+        "id": "collection_to_display"
+      }
+    ],
+    "presets": [
+      {
+        "category": "One section",
+        "name": "One section"
+      }
+    ]
+  }
 {% endschema %}
 
 <style>
   .collection-grid {
-    display:flex;
-    margin-left:200px;
+    display: flex;
+    margin-left: 20%;
+  }
+
+  .collection-item {
+    margin: 20px;
+    border: 1px solid black;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+
+  }
+
+  .collection-detail {
+    text-decoration: none;
   }
 </style>
