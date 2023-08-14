@@ -29,7 +29,7 @@
         "hover-text-1": "Discover",
         "hover-text-2": "The Eau de parfum 100ml Collection",
         "hover-text-img2": "The Oud Collection",
-        "link1": "",
+        "link1": "shopify:\/\/collections\/oud",
         "link2": ""
       }
     },
@@ -101,29 +101,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "649f01ec-92c3-49d9-90fe-0f68b6298d49": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "62c262ff-18a2-49bf-8d99-99fa2fdc6b77": {
-      "type": "one-section",
-      "settings": {
-        "title": "Featured Collections",
-        "collection_to_display": "2ml"
-      }
-    },
-    "dad92262-6195-4bd5-8bb4-96dba49cbe44": {
-      "type": "one-section",
-      "settings": {
-        "title": "Featured Collections",
-        "collection_to_display": "2ml"
-      }
     }
   },
   "order": [
@@ -132,9 +109,6 @@
     "b68dc7d5-7b21-4ff9-964f-6f2f3790fccc",
     "dc602b37-bb6c-4d23-b2a2-38ae17a5fbdc",
     "6acc3809-ff84-4d4d-b5c1-c980de736b79",
-    "2ac315f8-2123-4d5f-907d-2d2b575d0d0a",
-    "649f01ec-92c3-49d9-90fe-0f68b6298d49",
-    "62c262ff-18a2-49bf-8d99-99fa2fdc6b77",
-    "dad92262-6195-4bd5-8bb4-96dba49cbe44"
+    "2ac315f8-2123-4d5f-907d-2d2b575d0d0a"
   ]
 }
