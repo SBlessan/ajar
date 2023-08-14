@@ -29,7 +29,11 @@
         "hover-text-1": "Discover",
         "hover-text-2": "The Eau de parfum 100ml Collection",
         "hover-text-img2": "The Oud Collection",
+<<<<<<< HEAD
         "link1": "shopify:\/\/collections\/oud",
+=======
+        "link1": "",
+>>>>>>> origin/secondary
         "link2": ""
       }
     },
@@ -74,9 +78,15 @@
       "settings": {
         "image-left": "shopify:\/\/shop_images\/4.webp",
         "image-right": "shopify:\/\/shop_images\/2.webp",
+<<<<<<< HEAD
         "hover-text-1": "Discover",
         "hover-text-2": "The Frankincense Collection",
         "hover-text-img2": "Routes Nomades",
+=======
+        "hover-text-1": "",
+        "hover-text-2": "",
+        "hover-text-img2": "",
+>>>>>>> origin/secondary
         "link1": "",
         "link2": ""
       }
@@ -86,14 +96,24 @@
       "settings": {
         "image-left": "shopify:\/\/shop_images\/5.webp",
         "image-right": "shopify:\/\/shop_images\/6.webp",
+<<<<<<< HEAD
         "hover-text-1": "Discover",
         "hover-text-2": "Halwa Kiss Parfum",
         "hover-text-img2": "The Honey Collection",
+=======
+        "hover-text-1": "",
+        "hover-text-2": "",
+        "hover-text-img2": "",
+>>>>>>> origin/secondary
         "link1": "",
         "link2": ""
       }
     },
+<<<<<<< HEAD
     "2ac315f8-2123-4d5f-907d-2d2b575d0d0a": {
+=======
+    "e2afe977-226e-4533-b90b-caf57c54179a": {
+>>>>>>> origin/secondary
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "<div id=\"insta-feed\"><\/div>",
@@ -109,6 +129,10 @@
     "b68dc7d5-7b21-4ff9-964f-6f2f3790fccc",
     "dc602b37-bb6c-4d23-b2a2-38ae17a5fbdc",
     "6acc3809-ff84-4d4d-b5c1-c980de736b79",
+<<<<<<< HEAD
     "2ac315f8-2123-4d5f-907d-2d2b575d0d0a"
+=======
+    "e2afe977-226e-4533-b90b-caf57c54179a"
+>>>>>>> origin/secondary
   ]
 }
