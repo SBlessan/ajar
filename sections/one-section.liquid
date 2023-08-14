@@ -1,0 +1,93 @@
+
+
+
+{% comment %}
+  collections-template.liquid
+  This is an example of a collection section template.
+{% endcomment %}
+
+<section class="collection-section">
+  <h2 class="section-title">{{ section.settings.title }}</h2>
+  
+  <div class="collection-grid">
+   
+    
+    {% for collec in collections[section.settings.collection_to_display.handle].products %}
+      <div class="collection-item">
+        <a href="{{ collec.url }}">
+          <p class="myP" data-title={{  collec.title }} data-id={{ collec.variants[0].id }}>{{ collec.title }}</p>
+          <img src="{{ collec.featured_image | img_url: 'large' }}" alt="{{ collec.title }}">
+          <h3>{{ collec.title }}</h3>
+          <p class="demo">{{ collec.variants[0].id }}</p>
+        </a>
+        <button data-id={{ collec.variants[0].id }} class="add_button">Add to Cart</button>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+
+$( document ).ready(function() {
+  jQuery(function() {
+        CartJS.init({{ cart | json }});
+    });
+  
+  
+
+
+  $('.add_button').click(function() {
+        
+        const element = $(this).attr("data-id"); 
+       
+        // let id = element.getAttribute("data-id"); 
+        console.log("attrrrr" , element)
+        CartJS.addItem(element);
+    });
+   
+});
+
+ 
+
+  
+</script>
+
+
+{% schema %}
+
+  {
+  "name": "Collection Section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section Title",
+      "id": "title",
+      "default": "Featured Collections"
+    },
+    {
+      "type": "collection",
+      "label": "Collection to Display",
+      "id": "collection_to_display"
+    }
+  ], "presets":[{
+      "category":"One section",
+      "name":"One section"
+    }]
+}
+
+{% endschema %}
+
+<style>
+  .collection-grid {
+    display:flex;
+    margin-left:0 auto;
+  }
+
+  .collection-item{
+    margin:20px;
+    border:1px solid black;
+    width:30%;
+    padding:20px;
+    text-align:center;
+  }
+</style>

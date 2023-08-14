@@ -1,1 +1,46 @@
-{"sections":{"cart-items":{"type":"main-cart-items","settings":{"padding_top":36,"padding_bottom":36}},"cart-footer":{"type":"main-cart-footer","blocks":{"subtotal":{"type":"subtotal","settings":{}},"buttons":{"type":"buttons","settings":{}}},"block_order":["subtotal","buttons"],"settings":{"padding_top":20,"padding_bottom":40}}},"order":["cart-items","cart-footer"]}
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "17f20af1-339b-4d3e-ba94-ce62675fbb13": {
+      "type": "one-section",
+      "settings": {
+        "title": "Featured Collections",
+        "collection_to_display": "2ml"
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "17f20af1-339b-4d3e-ba94-ce62675fbb13"
+  ]
+}
