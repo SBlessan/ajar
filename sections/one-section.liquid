@@ -1,4 +1,4 @@
-{% if cart.item_count > 0 %}
+
 
   <section class="collection-section">
     <h2 class="section-title">{{ section.settings.title }}</h2>
@@ -7,7 +7,7 @@
     <div class="collection-grid">
 
 
-<<<<<<< HEAD
+
       {% for collec in collections[section.settings.collection_to_display.handle].products %}
         <div class="collection-item">
           <a href="{{ collec.url }}">
@@ -18,57 +18,75 @@
           </a>
           <button data-id={{ collec.variants[0].id }} class="add_button">Add to Cart</button>
         </div>
-        {% for item in cart.items %}
-          <p class="try-data" data-cart="{{item.title}}"></p>
-        {% endfor %}
+
+
+        <!-- {% for item in cart.items %}
+          <p class="try-data" data-cart="{{cart.items}}"></p>
+        {% endfor %} -->
+
       {% endfor %}
     </div>
 
   </section>
 
-{% endif %}
-=======
-<section class="collection-section">
-  <h2 class="section-title">{{ section.settings.title }}</h2>
-  
-  <div class="collection-grid">
-   
-    
-    {% for collec in collections[section.settings.collection_to_display.handle].products %}
-      <div class="collection-item">
-        <a href="{{ collec.url }}">
-          <p class="myP" data-title={{  collec.title }} data-id={{ collec.variants[0].id }}>{{ collec.title }}</p>
-          <img src="{{ collec.featured_image | img_url: 'large' }}" alt="{{ collec.title }}">
-          <h3>{{ collec.title }}</h3>
-          <p class="demo">{{ collec.variants[0].id }}</p>
-        </a>
-        <button data-id={{ collec.variants[0].id }} class="add_button">Add to Cart</button>
-      </div>
-    {% endfor %}
-  </div>
-</section>
->>>>>>> 2dee31f6db8f978ff2edc9c7f13ce9fb3058c0c9
+
+
+
 
 <script>
 
   $(document).ready(function() {
+
     jQuery(function() {
       CartJS.init({{ cart | json }});
     });
+    
+      
+      sample()
+    
+      function sample(){
+        console.log("Onload working")
+        let c = 0;
+        let p = 0;
+        let cartLength = CartJS.cart.items
+        console.log("length is : ", cartLength.length)
+        
+        for (let i = 0; i < cartLength.length; i++) {
+          if(CartJS.cart.items[i].product_type == '15ml')
+          {
+            console.log(CartJS.cart.items[i])
+            c = c + CartJS.cart.items[i].quantity
 
+          }
+          else if(CartJS.cart.items[i].product_type == '2ml')
+          {
+            p = p + CartJS.cart.items[i].quantity
+          }
+
+
+          console.log(CartJS.cart.items[i].product_id)
+          }
+      console.log("Product Count is : ", c)
+      console.log("Sample Count is : ", p)
+      if(p<c) {
+        console.log("c is less than p")
+        $(".collection-section").css("display","block");
+      }
+      }
+    
 
 
     $('.add_button').click(function() {
+      
 
+      
       const element = $(this).attr("data-id");
-      const data = $(".try-data").attr("data-cart")
-      console.log("Data is : ", data)
-
-
+      // const data = $(".try-data").attr("data-cart")
+      // const Pdata = Object.values(data);
+      console.log("Attribute is : " , element)
       CartJS.addItem(element);
+     
 
-
-      console.log(CartJS.cart.item_count)
     });
 
   });
@@ -101,7 +119,7 @@
 
 <style>
   .collection-grid {
-<<<<<<< HEAD
+
     display: flex;
     margin-left: 20%;
   }
@@ -118,17 +136,21 @@
 
   .collection-detail {
     text-decoration: none;
-=======
-    display:flex;
-    margin-left:0 auto;
+
+    display: flex;
+    margin-left: 0 auto;
   }
 
-  .collection-item{
-    margin:20px;
-    border:1px solid black;
-    width:30%;
-    padding:20px;
-    text-align:center;
->>>>>>> 2dee31f6db8f978ff2edc9c7f13ce9fb3058c0c9
+  .collection-item {
+    margin: 20px;
+    border: 1px solid black;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+
+  }
+
+  .collection-section{
+    display: none;
   }
 </style>
