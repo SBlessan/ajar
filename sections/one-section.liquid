@@ -14,7 +14,7 @@
           <a href="{{ collec.url }}">
 
             <img src="{{ collec.featured_image | img_url: 'large' }}" alt="{{ collec.title }}">
-            <h3 class="collection-detail">{{ collec.title }}</h3>
+            <p class="collection-detail">{{ collec.title }}</p>
             <p class="demo collection-detail">{{ collec.type }}</p>
           </a>
           <button data-id={{ collec.variants[0].id }} class="add_button">Add to Cart</button>
@@ -144,7 +144,7 @@
 
   }
 
-  .collection-detail {
+  .collection-detail p{
     text-decoration: none;
 
     display: flex;
