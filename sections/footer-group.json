@@ -5,7 +5,8 @@
     "footer": {
       "type": "footer",
       "custom_css": [
-        ".footer-block--newsletter{padding:0px;}"
+        ".footer-block--newsletter {padding: 0px;}",
+        ".footer__content-top{padding:0;}"
       ],
       "settings": {
         "color_scheme": "background-1",
