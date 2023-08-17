@@ -67,7 +67,7 @@
         ".price__container {width: 100%;}",
         ".price__regular {text-align: center;}",
         ".price-item {margin: 0 auto; width: 100%; font-size: 14px;}",
-        ".product-card-wrapper{padding-bottom:50px;}"
+        ".product-card-wrapper {padding-bottom: 10px;}"
       ],
       "settings": {
         "products_per_page": 16,
