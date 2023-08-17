@@ -63,8 +63,8 @@
       "type": "main-collection-product-grid",
       "custom_css": [
         "li:hover {color: white; text-align: center; background-color: #f3eddf;}",
-        ".card__content {text-align: center; }",
-        ".price__container {text-align: center;}",
+        ".card__content {text-align: center;}",
+        ".price__container {width:100%;}",
         ".price__regular {text-align: center;}",
         ".price-item {margin-left: 50%; width: 100%; font-size: 14px;}"
       ],
