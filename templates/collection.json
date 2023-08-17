@@ -62,7 +62,7 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "custom_css": [
-        "li:hover{color:white; text-align:center; background-color:black;}"
+        "li:hover {color: white; text-align: center; background-color: #F3EDDF;}"
       ],
       "settings": {
         "products_per_page": 16,
