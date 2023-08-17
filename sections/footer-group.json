@@ -6,7 +6,8 @@
       "type": "footer",
       "custom_css": [
         ".footer__content-top {padding: 0;}",
-        ".footer__content-bottom{padding:0;}"
+        ".footer__content-bottom {padding: 0;}",
+        ".footer__column{display:none;}"
       ],
       "settings": {
         "color_scheme": "background-1",
