@@ -64,8 +64,7 @@
       "custom_css": [
         "li:hover {color: white; text-align: center; background-color: #f3eddf;}",
         ".card__content {text-align: center;}",
-        ".price__container {text-align: center;}",
-        ".price__regular{text-align: center;}"
+        ".price__container{text-align: center;}"
       ],
       "settings": {
         "products_per_page": 16,
