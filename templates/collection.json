@@ -66,7 +66,7 @@
         ".card__content {text-align: center;}",
         ".price__container {text-align: center;}",
         ".price__regular {text-align: center;}",
-        ".price-item {margin-left: 50%; width: 100%;}"
+        ".price-item {margin-left: 50%; width: 100%; font-size:16px;}"
       ],
       "settings": {
         "products_per_page": 16,
