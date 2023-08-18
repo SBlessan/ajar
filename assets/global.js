@@ -1257,3 +1257,12 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+
+$(document).ready( function() {
+  console.log("hello from line 52 in theme-editor.js")
+})
+
+
+
+
