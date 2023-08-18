@@ -34,7 +34,7 @@
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",
-        "menu_type_desktop": "drawer",
+        "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "background-1",
@@ -49,7 +49,6 @@
     },
     "f73aaf6f-64ed-43f1-92a6-5b2d207c70e0": {
       "type": "try-section",
-      "disabled": true,
       "blocks": {
         "16659c09-e538-416e-8654-7949f0144d57": {
           "type": "image",
@@ -94,6 +93,7 @@
         "2e27a340-45ae-49b4-b771-74f8c03f71b0",
         "a919329b-fd72-45b0-98b9-74fb4a25d2b7"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Try heading"
       }
