@@ -71,6 +71,19 @@
       {% render 'product-media-gallery', variant_images: variant_images %}
     </div>
     {% endcomment %}
+
+    <div class = "product_images">
+      <div class = "main_images" >
+        <div class = "thumb_images">
+          <h1>From new images div</h1>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
     <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <product-info
         id="ProductInfo-{{ section.id }}"
