@@ -1260,17 +1260,17 @@ customElements.define('product-recommendations', ProductRecommendations);
 
 
 $(document).ready( function() {
-   $('.slider-for').slick({
+   $('.main_images').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  asNavFor: '.slider-nav'
+  asNavFor: '.thumb_images'
 });
-$('.slider-nav').slick({
+$('.thumb_images').slick({
   slidesToShow: 3,
   slidesToScroll: 1,
-  asNavFor: '.slider-for',
+  asNavFor: '.main_images',
   dots: true,
   centerMode: true,
   focusOnSelect: true
