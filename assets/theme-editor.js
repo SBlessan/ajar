@@ -48,9 +48,7 @@ document.addEventListener('shopify:inspector:deactivate', () => hideProductModal
 
 
 
-$(document).ready( function() {
-  console.log("hello from line 52 in theme-editor.js")
-})
+
 
 
 
