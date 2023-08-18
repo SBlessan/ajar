@@ -1,21 +1,4 @@
-$(document).ready( function() {
-  console.log("Hi from Slick")
-  $('.main_images').slick();
-   $('.main_images').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.thumb_images'
-});
-$('.thumb_images').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.main_images',
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true
-});
+
 
 
 
