@@ -1,3 +1,24 @@
+$(document).ready( function() {
+   $('.main_images').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.thumb_images'
+});
+$('.thumb_images').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.main_images',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+
+
+
+
+
 function getFocusableElements(container) {
   return Array.from(
     container.querySelectorAll(
@@ -1259,22 +1280,7 @@ class ProductRecommendations extends HTMLElement {
 customElements.define('product-recommendations', ProductRecommendations);
 
 
-$(document).ready( function() {
-   $('.main_images').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  asNavFor: '.thumb_images'
-});
-$('.thumb_images').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  asNavFor: '.main_images',
-  dots: true,
-  centerMode: true,
-  focusOnSelect: true
-});
+
 })
 
 
