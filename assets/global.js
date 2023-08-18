@@ -1,5 +1,6 @@
 $(document).ready( function() {
   console.log("Hi from Slick")
+  $('.main_images').slick();
    $('.main_images').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
