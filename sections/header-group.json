@@ -34,7 +34,7 @@
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",
-        "menu_type_desktop": "drawer",
+        "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "background-1",
@@ -46,62 +46,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "f73aaf6f-64ed-43f1-92a6-5b2d207c70e0": {
-      "type": "try-section",
-      "blocks": {
-        "16659c09-e538-416e-8654-7949f0144d57": {
-          "type": "image",
-          "settings": {
-            "block_image": "shopify:\/\/shop_images\/SAMPLE_EAGLE_EYED-400_1200_small_c6c119c5-3250-4ef0-b68e-bbfd42df63f2.png",
-            "blocktext": ""
-          }
-        },
-        "66218a05-2137-4515-b8d0-52f2aa107881": {
-          "type": "image",
-          "settings": {
-            "block_image": "shopify:\/\/shop_images\/SAMPLE_EAGLE_EYED-400_1200_small_c6c119c5-3250-4ef0-b68e-bbfd42df63f2.png",
-            "blocktext": ""
-          }
-        },
-        "8de31b97-ab60-4387-bfcc-6135f5d6b72d": {
-          "type": "image",
-          "settings": {
-            "block_image": "shopify:\/\/shop_images\/SAMPLE_EAGLE_EYED-400_1200_small_c6c119c5-3250-4ef0-b68e-bbfd42df63f2.png",
-            "blocktext": ""
-          }
-        },
-        "2e27a340-45ae-49b4-b771-74f8c03f71b0": {
-          "type": "image",
-          "settings": {
-            "block_image": "shopify:\/\/shop_images\/SAMPLE_EAGLE_EYED-400_1200_small_c6c119c5-3250-4ef0-b68e-bbfd42df63f2.png",
-            "blocktext": ""
-          }
-        },
-        "a919329b-fd72-45b0-98b9-74fb4a25d2b7": {
-          "type": "image",
-          "settings": {
-            "block_image": "shopify:\/\/shop_images\/SAMPLE_EAGLE_EYED-400_1200_small_c6c119c5-3250-4ef0-b68e-bbfd42df63f2.png",
-            "blocktext": ""
-          }
-        }
-      },
-      "block_order": [
-        "16659c09-e538-416e-8654-7949f0144d57",
-        "66218a05-2137-4515-b8d0-52f2aa107881",
-        "8de31b97-ab60-4387-bfcc-6135f5d6b72d",
-        "2e27a340-45ae-49b4-b771-74f8c03f71b0",
-        "a919329b-fd72-45b0-98b9-74fb4a25d2b7"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "Try heading"
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "f73aaf6f-64ed-43f1-92a6-5b2d207c70e0"
+    "header"
   ]
 }
