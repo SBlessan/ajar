@@ -1260,8 +1260,6 @@ customElements.define('product-recommendations', ProductRecommendations);
 
 
 
-})
-
 
 
 
